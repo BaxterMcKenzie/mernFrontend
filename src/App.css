@@ -117,6 +117,7 @@ label, input {
     border-radius: 8px;
     margin: 20px auto;
     box-shadow: 4px 4px 10px rgb(255, 85, 215);
+    height: 500px;
   }
   
   form button {
@@ -265,15 +266,15 @@ form.signup, form.login {
 @media screen and (max-width: 992px) {
   .home {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
 
-}
+  .workouts {
+    width: 95%;
+  }
 
-@media screen and (max-width: 600px) {
-  .cardHolder {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
+  .create {
+    width: 80%;
   }
 
 }
