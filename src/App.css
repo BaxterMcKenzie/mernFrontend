@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap');
 
 /* Layout */
 :root {
@@ -10,7 +11,7 @@ body {
   background-color: #333;
   margin: 0;
   font-family: "Lato";
-  color: white;
+  color: rgb(255, 255, 255);
   position: relative;
   z-index: 0;
 }
@@ -72,7 +73,7 @@ header a {
     margin: 20px auto;
     padding: 20px;
     position: relative;
-    box-shadow: 4px 4px 10px rgb(255, 85, 215);
+    box-shadow: 4px 4px 10px rgb(98, 63, 255);
 
     p {
       color: rgb(195, 195, 195);
@@ -116,7 +117,7 @@ label, input {
     border: 2px yellow solid;
     border-radius: 8px;
     margin: 20px auto;
-    box-shadow: 4px 4px 10px rgb(255, 85, 215);
+    box-shadow: 4px 4px 10px rgb(98, 63, 255);
     height: 500px;
     position: relative;
     top: 32px;
@@ -124,8 +125,8 @@ label, input {
   
   form button {
     background: var(--primary);
-    border: 0;
-    color: rgb(0, 0, 0);
+    border: 2px solid rgb(98, 63, 255);
+    color: rgb(98, 63, 255);
     padding: 10px;
     font-family: 'Lato';
     font-weight: 900;
@@ -135,19 +136,21 @@ label, input {
 
 button {
     background: var(--primary);
-    border: 0;
-    color: rgb(0, 0, 0);
+    border: 2px solid rgb(98, 63, 255);
+    color: rgb(98, 63, 255);
     padding: 10px;
     font-family: 'Lato';
     font-weight: 800;
     border-radius: 8px;
     cursor: pointer;
     margin-right: 10px;
+    box-shadow: 3px 3px 8px rgb(98, 63, 255);
   }
 
   button:hover {
     background: orange;
     transition: all 1s ease;
+    box-shadow: 2px 2px 8px rgb(29, 5, 133);
   }
   
   div.error {
@@ -294,7 +297,7 @@ form.signup, form.login {
     align-items: center;
 
     button {
-      padding: 14px
+      padding: 14px;
     }
   }
 
