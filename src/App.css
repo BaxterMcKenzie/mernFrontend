@@ -285,12 +285,44 @@ form.signup, form.login {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
   }
 
   .upload {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    button {
+      padding: 14px
+    }
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+
+  .workouts {
+    width: 90%;
+  }
+
+  .create {
+    width: 80%;
+    height: 470px;
+    padding-top: 5px;
+  }
+
+  .create-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+  }
+
+  .upload {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
 
     button {
       padding: 14px
