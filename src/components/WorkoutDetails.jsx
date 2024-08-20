@@ -160,18 +160,22 @@ const WorkoutDetails = ({workout}) => {
           <p><strong>Load (kg): </strong>{workout.load}</p>
           <p><strong>Reps: </strong>{workout.reps}</p>
           <p>{formatDistanceToNow(new Date(workout.createdAt), {includeSeconds: true}, {addSuffix: true})}</p>
-          <p>Created by: {workout.user_id ? getEmailCharactersBeforeAtSymbol(workout.user_id) : 'Unknown'}</p>
+          <p>Created by: {workout.user_id ? getEmailCharactersBeforeAtSymbol(workout.user_id) : 'Unknown'}</p><br/>
 
           <button onClick={handleNavigate}>Read More</button>
 
-          {/* Edit & Delete Buttons */}
-          <span className='button' onClick={handleEdit}>
-            <i className='fa-solid fa-pen'></i>
-          </span>
+          {workout.user_id === user_id && (
+            <>
+            {/* Edit & Delete Buttons */}
+              <span className='button' onClick={handleEdit}>
+                <i className='fa-solid fa-pen'></i>
+              </span>
 
-          <span className='button' onClick={handleDelete}>
-          <i className="fa-solid fa-trash-can"></i>
-          </span>
+              <span className='button' onClick={handleDelete}>
+              <i className="fa-solid fa-trash-can"></i>
+              </span>
+            </>
+          )}
         </>
       )}
       <button
