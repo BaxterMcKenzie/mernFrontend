@@ -73,36 +73,44 @@ const WorkoutForm = () => {
     <form className='create' onSubmit={handleSubmit}>
         <h3>Add a New Workout</h3>
 
-        <label>Exercise Title:</label>
+        <div className='create-form'>
+        <label>Exercise Title:
         <input
             type='text'
             onChange={(e) => setTitle(e.target.value)}
             value= {title}
         />
+        </label>
 
-        <label>Load (in Kg):</label>
+        <label>Load (in Kg):
         <input
             type='number'
             onChange={(e) => setLoad(e.target.value)}
             value= {load}
         />
+        </label>
 
-        <label>Reps:</label>
+        <label>Reps:
         <input
             type='number'
             onChange={(e) => setReps(e.target.value)}
             value= {reps}
         />
+        </label>
+        </div>
 
-        <label>Upload Image:</label>
+        <div className='upload'>
+        <label>Upload Image:
         <input 
         type='file' 
         accept='image/*'
         onChange={(e) => setImage(e.target.files[0])}
         />
+        </label>
 
         <button>Add Workout</button>
         {error && <div className='error'>{error}</div>}
+        </div>
     </form>
   )
 }
