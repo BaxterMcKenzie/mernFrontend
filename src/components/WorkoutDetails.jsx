@@ -155,7 +155,7 @@ const WorkoutDetails = ({workout}) => {
         <>
           <h4>{workout.title}</h4>
           {workout.image && (
-            <img className='workout-image' src={`${baseURL}/public/uploads/${workout.image}`} alt={workout.title}/>
+            <img className='workout-image' src={workout.image} alt={workout.title}/>
           )}
           <p><strong>Load (kg): </strong>{workout.load}</p>
           <p><strong>Reps: </strong>{workout.reps}</p>
